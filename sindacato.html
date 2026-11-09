@@ -3,101 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sindacato e sciopero | Diritti al Lavoro</title>
-  <meta name="description" content="La libertà sindacale, le rappresentanze in azienda, il diritto di assemblea, la tutela contro la condotta antisindacale e le regole sullo sciopero.">
+  <title>Sindacato | Diritti al Lavoro</title>
+  <meta name="description" content="La libertà sindacale, le rappresentanze in azienda, le assemblee e il diritto di sciopero.">
+  <link rel="preload" href="fonts/titillium-web-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <a class="salta" href="#contenuto">Salta al contenuto</a>
 
-  <header class="testata">
-    <div class="testata-interna">
-      <a class="marchio" href="index.html">
-        <span class="marchio-nome">Diritti al Lavoro</span>
-        <span class="marchio-sotto">Guida ai diritti di chi lavora in Italia</span>
-      </a>
-      <button type="button" class="bottone-indice" id="bottoneIndice" aria-expanded="false" aria-controls="indice">Indice</button>
-    </div>
+  <p class="avviso-indipendente">Sito informativo indipendente. Non è un sito istituzionale e non rappresenta alcun ente pubblico o sindacato.</p>
+
+  <header class="intestazione">
+    <p class="intestazione-occhiello">Guida ai diritti di chi lavora in Italia</p>
+    <p class="intestazione-titolo"><a href="index.html">Diritti al Lavoro</a></p>
+    <div class="fregio" aria-hidden="true"><span>&#10022;</span></div>
+    <p class="epigrafe">«L'Italia è una Repubblica democratica, fondata sul lavoro.»<cite>Costituzione, articolo 1</cite></p>
   </header>
 
-  <div class="pagina">
-
-    <nav class="indice" id="indice" aria-label="Indice della guida">
-      <p class="indice-titolo">Indice</p>
-      <ol>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="costituzione.html">La Costituzione</a></li>
-          <li><a href="contratto.html">Contratto e paga</a></li>
-          <li><a href="orario.html">Orario e straordinari</a></li>
-          <li><a href="ferie-assenze.html">Ferie e assenze</a></li>
-          <li><a href="famiglia.html">Famiglia e tempo libero</a></li>
-          <li><a href="dignita.html">Dignità e controlli</a></li>
-          <li><a href="sicurezza.html">Salute e sicurezza</a></li>
-          <li><a href="molestie.html">Discriminazioni e molestie</a></li>
-          <li><a href="ambiente.html">Ambiente di lavoro</a></li>
-          <li><a href="fine-rapporto.html">Fine del rapporto</a></li>
-          <li><a href="sindacato.html" aria-current="page">Sindacato e sciopero</a></li>
-          <li><a href="aiuto.html">A chi rivolgersi</a></li>
-          <li><a href="fonti.html">Fonti</a></li>
-      </ol>
-    </nav>
-
-    <main class="contenuto" id="contenuto">
-
-      <p class="occhiello">Diritti collettivi</p>
-      <h1>Sindacato e sciopero</h1>
-      <p class="sommario">Molti diritti individuali sono nati come conquiste collettive. Il sindacato e le rappresentanze aziendali sono lo strumento con cui chi lavora tratta alla pari con l'azienda.</p>
-
-      <h2>La libertà sindacale</h2>
-      <ul>
-        <li>Hai il diritto di <strong>iscriverti</strong> a un sindacato, di non iscriverti e di svolgere attività sindacale sul luogo di lavoro (Costituzione, art. 39; Statuto, art. 14).</li>
-        <li>È <strong>nullo</strong> qualsiasi patto o atto che subordini l'assunzione all'iscrizione o alla non iscrizione a un sindacato, o che ti licenzi, discrimini, trasferisca o penalizzi per la tua attività sindacale o per la partecipazione a uno sciopero (Statuto, art. 15).</li>
-        <li>Sono vietati i «sindacati di comodo», costituiti o sostenuti dal datore di lavoro (Statuto, art. 17).</li>
+  <nav class="menu" id="menu" aria-label="Sezioni della guida">
+    <div class="menu-interno">
+      <button type="button" class="menu-apri" id="menuApri" aria-expanded="false" aria-controls="menuLista">Menu &#9776;</button>
+      <ul class="menu-lista" id="menuLista">
+        <li class="menu-voce">
+          <a class="menu-link" href="basi.html">Le basi</a>
+          <ul class="sottomenu">
+            <li><a href="costituzione.html">La Costituzione</a></li>
+            <li><a href="contratto-collettivo.html">Il contratto collettivo (CCNL)</a></li>
+            <li><a href="statuto-lavoratori.html">Lo Statuto dei lavoratori</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="contratti.html">Contratti</a>
+          <ul class="sottomenu">
+            <li><a href="assunzione.html">L'assunzione e le informazioni obbligatorie</a></li>
+            <li><a href="periodo-di-prova.html">Il periodo di prova</a></li>
+            <li><a href="tempo-determinato.html">Il contratto a tempo determinato</a></li>
+            <li><a href="part-time.html">Il part-time</a></li>
+            <li><a href="apprendistato.html">L'apprendistato</a></li>
+            <li><a href="somministrazione.html">Il lavoro tramite agenzia</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="paga.html">Paga</a>
+          <ul class="sottomenu">
+            <li><a href="retribuzione.html">La retribuzione</a></li>
+            <li><a href="busta-paga.html">La busta paga</a></li>
+            <li><a href="tfr.html">Il TFR</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="tempo.html">Orario e ferie</a>
+          <ul class="sottomenu">
+            <li><a href="orario.html">L'orario di lavoro</a></li>
+            <li><a href="straordinari.html">Gli straordinari</a></li>
+            <li><a href="riposi-e-pause.html">Riposi, pause e lavoro notturno</a></li>
+            <li><a href="ferie.html">Le ferie</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="famiglia.html">Salute e famiglia</a>
+          <ul class="sottomenu">
+            <li><a href="malattia.html">La malattia</a></li>
+            <li><a href="legge-104.html">Legge 104 e malattie gravi</a></li>
+            <li><a href="maternita.html">La maternità</a></li>
+            <li><a href="paternita.html">La paternità</a></li>
+            <li><a href="congedo-parentale.html">Il congedo parentale</a></li>
+            <li><a href="lavoro-agile.html">Il lavoro agile</a></li>
+            <li><a href="tempo-libero.html">Il tempo fuori dal lavoro</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="tutele.html">Dignità e tutele</a>
+          <ul class="sottomenu">
+            <li><a href="opinioni-e-colloqui.html">Opinioni e colloqui di lavoro</a></li>
+            <li><a href="controlli.html">Telecamere e controlli</a></li>
+            <li><a href="disciplinare.html">Il procedimento disciplinare</a></li>
+            <li><a href="mansioni-e-trasferimenti.html">Mansioni e trasferimenti</a></li>
+            <li><a href="sicurezza.html">Salute e sicurezza</a></li>
+            <li><a href="stress.html">Lo stress lavoro-correlato</a></li>
+            <li><a href="discriminazioni.html">Le discriminazioni</a></li>
+            <li><a href="molestie-e-mobbing.html">Molestie e mobbing</a></li>
+            <li><a href="whistleblowing.html">Segnalare illeciti</a></li>
+            <li><a href="ambiente-di-lavoro.html">L'ambiente di lavoro e i responsabili</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="fine-rapporto.html">Fine del rapporto</a>
+          <ul class="sottomenu">
+            <li><a href="dimissioni.html">Le dimissioni</a></li>
+            <li><a href="licenziamento.html">Il licenziamento</a></li>
+            <li><a href="cosa-spetta.html">Cosa ti spetta alla fine</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="sindacato.html" aria-current="true">Sindacato</a>
+          <ul class="sottomenu">
+            <li><a href="diritti-sindacali.html">I diritti sindacali</a></li>
+            <li><a href="sciopero.html">Lo sciopero</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="aiuto.html">Aiuto</a>
+          <ul class="sottomenu">
+            <li><a href="a-chi-rivolgersi.html">A chi rivolgersi</a></li>
+            <li><a href="calcola-scadenze.html">Calcola le scadenze</a></li>
+            <li><a href="glossario.html">Glossario</a></li>
+            <li><a href="fonti.html">Fonti</a></li>
+          </ul>
+        </li>
       </ul>
+    </div>
+  </nav>
 
-      <h2>I diritti in azienda</h2>
-      <p>Nelle unità produttive con più di 15 dipendenti (più di 5 nelle imprese agricole) si applicano le norme dello Statuto sull'attività sindacale. Tra queste:</p>
-      <ul>
-        <li><strong>Rappresentanze sindacali</strong> in azienda (RSA o RSU), che trattano con la direzione e assistono i lavoratori.</li>
-        <li><strong>Assemblea</strong>: puoi partecipare ad assemblee sul luogo di lavoro durante l'orario, nel limite di <strong>10 ore all'anno retribuite</strong>, salvo condizioni migliori del CCNL (art. 20).</li>
-        <li><strong>Referendum</strong> su materie sindacali, fuori dall'orario di lavoro (art. 21).</li>
-        <li><strong>Permessi</strong> retribuiti e non retribuiti per i dirigenti sindacali (artt. 23 e 24).</li>
-        <li><strong>Bacheca sindacale</strong> in un luogo accessibile a tutti (art. 25).</li>
-        <li>Possibilità di versare i <strong>contributi sindacali</strong> tramite trattenuta in busta paga (art. 26).</li>
+  <main class="corpo" id="contenuto">
+
+      <nav class="briciole" aria-label="Percorso"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Sindacato</li></ol></nav>
+      <div class="testo testo-largo">
+      <p class="occhiello">Sezione</p>
+      <h1>Sindacato</h1>
+      <p class="sommario">La libertà sindacale, le rappresentanze in azienda, le assemblee e il diritto di sciopero.</p>
+      <ul class="schede">
+        <li><a href="diritti-sindacali.html"><strong>I diritti sindacali</strong><span>Iscrizione, rappresentanze, assemblee retribuite, permessi e tutela contro la condotta antisindacale.</span></a></li>
+        <li><a href="sciopero.html"><strong>Lo sciopero</strong><span>Come funziona il diritto di sciopero, cosa succede alla paga e le regole per i servizi pubblici essenziali.</span></a></li>
       </ul>
-      <p class="fonte">Fonte: <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1970-05-20;300">Statuto dei lavoratori</a>, titoli II e III e art. 35.</p>
+      </div>
 
-      <h2>La condotta antisindacale</h2>
-      <p>Se il datore di lavoro ostacola la libertà o l'attività sindacale o il diritto di sciopero, il sindacato può ricorrere al giudice del lavoro con una procedura rapida. Il giudice, se accerta la violazione, ordina di cessare il comportamento e di rimuoverne gli effetti.</p>
-      <p class="fonte">Fonte: <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1970-05-20;300~art28">Statuto dei lavoratori, art. 28</a>.</p>
-
-      <h2>Lo sciopero</h2>
-      <ul>
-        <li>È un diritto costituzionale, che si esercita nell'ambito delle leggi che lo regolano (art. 40).</li>
-        <li>Durante lo sciopero la retribuzione non è dovuta per le ore non lavorate, ma non puoi essere sanzionato per avervi aderito.</li>
-        <li>L'azienda non può assumere lavoratori a termine o tramite somministrazione per sostituire chi sciopera.</li>
-        <li>Nei <strong>servizi pubblici essenziali</strong>, come trasporti, sanità e scuola, lo sciopero deve rispettare regole aggiuntive: preavviso di almeno 10 giorni e garanzia delle prestazioni indispensabili.</li>
-      </ul>
-      <p class="fonte">Fonte: Costituzione, art. 40; <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-06-15;81">D.Lgs. 81/2015, artt. 20 e 32</a>; <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-06-12;146">L. 146/1990</a>.</p>
-
-      <h2>Perché conviene rivolgersi a un sindacato</h2>
-      <p>Il sindacato conosce il tuo contratto collettivo, può controllare la busta paga, assisterti nei procedimenti disciplinari, inviare le dimissioni online, contestare un licenziamento e tentare una conciliazione. Molti servizi sono gratuiti o a costo ridotto per gli iscritti; i <strong>patronati</strong> offrono gratuitamente assistenza su pratiche INPS e INAIL.</p>
-
-      <nav class="naviga-pagine" aria-label="Pagine vicine">
-        <a class="precedente" href="fine-rapporto.html"><span>Precedente</span>Fine del rapporto</a>
-        <a class="successiva" href="aiuto.html"><span>Successiva</span>A chi rivolgersi</a>
-      </nav>
-
-    </main>
-
-  </div>
+  </main>
 
   <footer class="piede">
-    <div class="piede-interno">
-      <p><strong>Diritti al Lavoro</strong> &middot; Guida informativa sui diritti di chi lavora in Italia.</p>
-      <p>I contenuti hanno scopo informativo e non sostituiscono la consulenza di un sindacato, di un patronato o di un avvocato. Riguardano principalmente il lavoro dipendente nel settore privato. Ultima revisione: novembre 2026. <a href="fonti.html">Vedi le fonti</a>.</p>
-      <p>Questo sito non usa cookie, non traccia i visitatori e non carica risorse da servizi esterni.</p>
+    <div class="piede-griglia">
+      <div>
+        <h2>Fonti ufficiali e aperte</h2>
+        <ul>
+          <li><a href="https://www.normattiva.it">Normattiva</a>, le leggi italiane vigenti</li>
+          <li><a href="https://www.gazzettaufficiale.it">Gazzetta Ufficiale</a> della Repubblica</li>
+          <li><a href="https://www.senato.it/istituzione/la-costituzione">La Costituzione</a> sul sito del Senato</li>
+          <li><a href="https://www.cortecostituzionale.it">Corte costituzionale</a></li>
+          <li><a href="https://eur-lex.europa.eu">EUR-Lex</a>, il diritto dell'Unione europea</li>
+          <li><a href="https://www.ilo.org/international-labour-standards">Norme internazionali del lavoro</a> (OIL)</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Istituzioni</h2>
+        <ul>
+          <li><a href="https://www.lavoro.gov.it">Ministero del Lavoro</a></li>
+          <li><a href="https://www.ispettorato.gov.it">Ispettorato Nazionale del Lavoro</a></li>
+          <li><a href="https://www.inps.it">INPS</a> e <a href="https://www.inail.it">INAIL</a></li>
+          <li><a href="https://www.cnel.it">CNEL</a>, archivio dei contratti collettivi</li>
+          <li><a href="https://www.garanteprivacy.it">Garante privacy</a> e <a href="https://www.anticorruzione.it">ANAC</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>La guida</h2>
+        <ul>
+          <li><a href="fonti.html">Tutte le fonti utilizzate</a></li>
+          <li><a href="glossario.html">Glossario</a></li>
+          <li><a href="a-chi-rivolgersi.html">A chi rivolgersi</a></li>
+          <li><a href="calcola-scadenze.html">Calcola le scadenze</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="piede-fondo">
+      <p><strong>Diritti al Lavoro</strong> è una guida informativa indipendente: non sostituisce la consulenza di un sindacato, di un patronato o di un avvocato. Riguarda principalmente il lavoro dipendente nel settore privato. Ultima revisione dei contenuti: novembre 2026.</p>
+      <p>Il sito non usa cookie, non traccia i visitatori e non carica risorse da servizi esterni. Carattere: Titillium Web, Accademia di Belle Arti di Urbino, licenza SIL Open Font License.</p>
     </div>
   </footer>
 

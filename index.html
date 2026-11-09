@@ -4,112 +4,220 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diritti al Lavoro | Guida ai diritti di chi lavora in Italia</title>
-  <meta name="description" content="I diritti di chi lavora in Italia, spiegati con chiarezza e con le fonti di legge: orario, straordinari, ferie, famiglia, dignità, sicurezza, molestie e fine del rapporto.">
+  <meta name="description" content="I diritti di chi lavora in Italia spiegati con chiarezza e con le fonti di legge: contratti, paga, orario, ferie, famiglia, dignità, sicurezza e fine del rapporto.">
+  <link rel="preload" href="fonts/titillium-web-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <a class="salta" href="#contenuto">Salta al contenuto</a>
 
-  <header class="testata">
-    <div class="testata-interna">
-      <a class="marchio" href="index.html">
-        <span class="marchio-nome">Diritti al Lavoro</span>
-        <span class="marchio-sotto">Guida ai diritti di chi lavora in Italia</span>
-      </a>
-      <button type="button" class="bottone-indice" id="bottoneIndice" aria-expanded="false" aria-controls="indice">Indice</button>
-    </div>
+  <p class="avviso-indipendente">Sito informativo indipendente. Non è un sito istituzionale e non rappresenta alcun ente pubblico o sindacato.</p>
+
+  <header class="intestazione">
+    <p class="intestazione-occhiello">Guida ai diritti di chi lavora in Italia</p>
+    <p class="intestazione-titolo"><a href="index.html">Diritti al Lavoro</a></p>
+    <div class="fregio" aria-hidden="true"><span>&#10022;</span></div>
+    <p class="epigrafe">«L'Italia è una Repubblica democratica, fondata sul lavoro.»<cite>Costituzione, articolo 1</cite></p>
   </header>
 
-  <div class="pagina">
+  <nav class="menu" id="menu" aria-label="Sezioni della guida">
+    <div class="menu-interno">
+      <button type="button" class="menu-apri" id="menuApri" aria-expanded="false" aria-controls="menuLista">Menu &#9776;</button>
+      <ul class="menu-lista" id="menuLista">
+        <li class="menu-voce">
+          <a class="menu-link" href="basi.html">Le basi</a>
+          <ul class="sottomenu">
+            <li><a href="costituzione.html">La Costituzione</a></li>
+            <li><a href="contratto-collettivo.html">Il contratto collettivo (CCNL)</a></li>
+            <li><a href="statuto-lavoratori.html">Lo Statuto dei lavoratori</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="contratti.html">Contratti</a>
+          <ul class="sottomenu">
+            <li><a href="assunzione.html">L'assunzione e le informazioni obbligatorie</a></li>
+            <li><a href="periodo-di-prova.html">Il periodo di prova</a></li>
+            <li><a href="tempo-determinato.html">Il contratto a tempo determinato</a></li>
+            <li><a href="part-time.html">Il part-time</a></li>
+            <li><a href="apprendistato.html">L'apprendistato</a></li>
+            <li><a href="somministrazione.html">Il lavoro tramite agenzia</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="paga.html">Paga</a>
+          <ul class="sottomenu">
+            <li><a href="retribuzione.html">La retribuzione</a></li>
+            <li><a href="busta-paga.html">La busta paga</a></li>
+            <li><a href="tfr.html">Il TFR</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="tempo.html">Orario e ferie</a>
+          <ul class="sottomenu">
+            <li><a href="orario.html">L'orario di lavoro</a></li>
+            <li><a href="straordinari.html">Gli straordinari</a></li>
+            <li><a href="riposi-e-pause.html">Riposi, pause e lavoro notturno</a></li>
+            <li><a href="ferie.html">Le ferie</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="famiglia.html">Salute e famiglia</a>
+          <ul class="sottomenu">
+            <li><a href="malattia.html">La malattia</a></li>
+            <li><a href="legge-104.html">Legge 104 e malattie gravi</a></li>
+            <li><a href="maternita.html">La maternità</a></li>
+            <li><a href="paternita.html">La paternità</a></li>
+            <li><a href="congedo-parentale.html">Il congedo parentale</a></li>
+            <li><a href="lavoro-agile.html">Il lavoro agile</a></li>
+            <li><a href="tempo-libero.html">Il tempo fuori dal lavoro</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="tutele.html">Dignità e tutele</a>
+          <ul class="sottomenu">
+            <li><a href="opinioni-e-colloqui.html">Opinioni e colloqui di lavoro</a></li>
+            <li><a href="controlli.html">Telecamere e controlli</a></li>
+            <li><a href="disciplinare.html">Il procedimento disciplinare</a></li>
+            <li><a href="mansioni-e-trasferimenti.html">Mansioni e trasferimenti</a></li>
+            <li><a href="sicurezza.html">Salute e sicurezza</a></li>
+            <li><a href="stress.html">Lo stress lavoro-correlato</a></li>
+            <li><a href="discriminazioni.html">Le discriminazioni</a></li>
+            <li><a href="molestie-e-mobbing.html">Molestie e mobbing</a></li>
+            <li><a href="whistleblowing.html">Segnalare illeciti</a></li>
+            <li><a href="ambiente-di-lavoro.html">L'ambiente di lavoro e i responsabili</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="fine-rapporto.html">Fine del rapporto</a>
+          <ul class="sottomenu">
+            <li><a href="dimissioni.html">Le dimissioni</a></li>
+            <li><a href="licenziamento.html">Il licenziamento</a></li>
+            <li><a href="cosa-spetta.html">Cosa ti spetta alla fine</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="sindacato.html">Sindacato</a>
+          <ul class="sottomenu">
+            <li><a href="diritti-sindacali.html">I diritti sindacali</a></li>
+            <li><a href="sciopero.html">Lo sciopero</a></li>
+          </ul>
+        </li>
+        <li class="menu-voce">
+          <a class="menu-link" href="aiuto.html">Aiuto</a>
+          <ul class="sottomenu">
+            <li><a href="a-chi-rivolgersi.html">A chi rivolgersi</a></li>
+            <li><a href="calcola-scadenze.html">Calcola le scadenze</a></li>
+            <li><a href="glossario.html">Glossario</a></li>
+            <li><a href="fonti.html">Fonti</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <nav class="indice" id="indice" aria-label="Indice della guida">
-      <p class="indice-titolo">Indice</p>
-      <ol>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="costituzione.html">La Costituzione</a></li>
-          <li><a href="contratto.html">Contratto e paga</a></li>
-          <li><a href="orario.html">Orario e straordinari</a></li>
-          <li><a href="ferie-assenze.html">Ferie e assenze</a></li>
-          <li><a href="famiglia.html">Famiglia e tempo libero</a></li>
-          <li><a href="dignita.html">Dignità e controlli</a></li>
-          <li><a href="sicurezza.html">Salute e sicurezza</a></li>
-          <li><a href="molestie.html">Discriminazioni e molestie</a></li>
-          <li><a href="ambiente.html">Ambiente di lavoro</a></li>
-          <li><a href="fine-rapporto.html">Fine del rapporto</a></li>
-          <li><a href="sindacato.html">Sindacato e sciopero</a></li>
-          <li><a href="aiuto.html">A chi rivolgersi</a></li>
-          <li><a href="fonti.html">Fonti</a></li>
-      </ol>
-    </nav>
+  <main class="corpo" id="contenuto">
 
-    <main class="contenuto" id="contenuto">
-
+      <div class="testo testo-largo">
       <p class="occhiello">Guida per lavoratrici e lavoratori</p>
       <h1>I tuoi diritti sul lavoro, spiegati con chiarezza</h1>
       <p class="sommario">Una guida concreta, basata sulle leggi italiane, per sapere cosa ti spetta, cosa un'azienda può e non può fare e a chi rivolgerti quando qualcosa non va.</p>
 
-      <div class="nota">
-        <p><strong>Come leggere questa guida.</strong> Ogni pagina distingue tra ciò che è <strong>obbligatorio per legge</strong> e ciò che è <strong>buona pratica</strong>. Le regole di legge sono accompagnate dal riferimento normativo e dal link alla fonte ufficiale. Il tuo contratto collettivo (CCNL) può prevedere condizioni migliori: verifica sempre anche quello.</p>
-      </div>
-
-      <h2>I numeri da conoscere</h2>
-      <p>Questi sono i limiti principali fissati dalla legge per il lavoro dipendente nel settore privato. I contratti collettivi possono migliorarli e, in alcuni casi previsti dalla legge, modularli.</p>
-      <div class="tabella">
-        <table>
-          <thead>
-            <tr><th scope="col">Valore</th><th scope="col">Cosa significa</th><th scope="col">Fonte</th></tr>
-          </thead>
-          <tbody>
-            <tr><td class="numero">40 ore</td><td>Orario normale di lavoro settimanale</td><td>D.Lgs. 66/2003, art. 3</td></tr>
-            <tr><td class="numero">48 ore</td><td>Media massima settimanale, straordinari compresi</td><td>D.Lgs. 66/2003, art. 4</td></tr>
-            <tr><td class="numero">250 ore</td><td>Tetto annuo di straordinario quando il contratto collettivo non regola la materia</td><td>D.Lgs. 66/2003, art. 5</td></tr>
-            <tr><td class="numero">11 ore</td><td>Riposo consecutivo minimo ogni 24 ore</td><td>D.Lgs. 66/2003, art. 7</td></tr>
-            <tr><td class="numero">24 ore</td><td>Riposo settimanale consecutivo, di regola la domenica</td><td>D.Lgs. 66/2003, art. 9</td></tr>
-            <tr><td class="numero">4 settimane</td><td>Ferie annuali retribuite minime, non monetizzabili</td><td>D.Lgs. 66/2003, art. 10</td></tr>
-            <tr><td class="numero">6 mesi</td><td>Durata massima del periodo di prova</td><td>D.Lgs. 104/2022, art. 7</td></tr>
-            <tr><td class="numero">60 + 180 giorni</td><td>Termini per contestare un licenziamento e poi agire in giudizio</td><td>L. 604/1966, art. 6</td></tr>
-            <tr><td class="numero">7 giorni</td><td>Tempo per revocare le dimissioni inviate online</td><td>D.Lgs. 151/2015, art. 26</td></tr>
-          </tbody>
-        </table>
+      <div class="ricerca">
+        <label for="campoRicerca">Cerca nella guida</label>
+        <input class="campo" type="search" id="campoRicerca" placeholder="Ad esempio: straordinari, ferie, licenziamento, part-time" autocomplete="off">
+        <ul class="risultati" id="risultatiRicerca" aria-live="polite"></ul>
       </div>
 
       <h2>Le sezioni della guida</h2>
       <ul class="schede">
-        <li><a href="costituzione.html"><strong>La Costituzione</strong><span>Le basi: retribuzione giusta, riposo, sindacato, sciopero.</span></a></li>
-        <li><a href="contratto.html"><strong>Contratto e paga</strong><span>Assunzione, informazioni obbligatorie, prova, busta paga.</span></a></li>
-        <li><a href="orario.html"><strong>Orario e straordinari</strong><span>Limiti, pause, riposi e come vanno gestiti gli straordinari.</span></a></li>
-        <li><a href="ferie-assenze.html"><strong>Ferie e assenze</strong><span>Ferie, malattia, permessi per assistenza e cure.</span></a></li>
-        <li><a href="famiglia.html"><strong>Famiglia e tempo libero</strong><span>Maternità, paternità, congedi, lavoro agile, disconnessione.</span></a></li>
-        <li><a href="dignita.html"><strong>Dignità e controlli</strong><span>Cosa l'azienda può e non può fare o chiederti.</span></a></li>
-        <li><a href="sicurezza.html"><strong>Salute e sicurezza</strong><span>Rischi, formazione, RLS, stress lavoro-correlato.</span></a></li>
-        <li><a href="molestie.html"><strong>Discriminazioni e molestie</strong><span>Riconoscerle, difendersi, segnalare senza ritorsioni.</span></a></li>
-        <li><a href="ambiente.html"><strong>Ambiente di lavoro e responsabili</strong><span>Cosa è lecito aspettarsi da un ambiente sano e da chi guida un team.</span></a></li>
-        <li><a href="fine-rapporto.html"><strong>Fine del rapporto</strong><span>Dimissioni, licenziamento, scadenze da non perdere.</span></a></li>
-        <li><a href="sindacato.html"><strong>Sindacato e sciopero</strong><span>Libertà sindacale, assemblee, rappresentanze.</span></a></li>
-        <li><a href="aiuto.html"><strong>A chi rivolgersi</strong><span>Passi concreti e uffici competenti.</span></a></li>
+        <li><a href="basi.html"><strong>Le basi</strong><span>I principi da cui nascono tutti i diritti di chi lavora: la Costituzione, i contratti collettivi e lo Statuto dei lavoratori.</span></a></li>
+        <li><a href="contratti.html"><strong>Contratti</strong><span>Come funzionano i diversi tipi di contratto di lavoro dipendente: assunzione, prova, tempo determinato, part-time, apprendistato e lavoro tramite agenzia.</span></a></li>
+        <li><a href="paga.html"><strong>Paga</strong><span>Quanto e come deve essere pagato il tuo lavoro, come leggere la busta paga e come funziona il TFR.</span></a></li>
+        <li><a href="tempo.html"><strong>Orario e ferie</strong><span>I limiti del tempo di lavoro: orario, straordinari, pause, riposi, lavoro notturno e ferie.</span></a></li>
+        <li><a href="famiglia.html"><strong>Salute e famiglia</strong><span>Malattia, permessi per assistere i familiari, maternità, paternità, congedi, lavoro agile e tempo libero.</span></a></li>
+        <li><a href="tutele.html"><strong>Dignità e tutele</strong><span>Cosa l'azienda può e non può fare o chiederti: opinioni, controlli, sanzioni, mansioni, sicurezza, discriminazioni, molestie e ambiente di lavoro.</span></a></li>
+        <li><a href="fine-rapporto.html"><strong>Fine del rapporto</strong><span>Dimissioni, licenziamento e cosa ti spetta quando il rapporto finisce, con le scadenze da non perdere.</span></a></li>
+        <li><a href="sindacato.html"><strong>Sindacato</strong><span>La libertà sindacale, le rappresentanze in azienda, le assemblee e il diritto di sciopero.</span></a></li>
+        <li><a href="aiuto.html"><strong>Aiuto</strong><span>Cosa fare quando un diritto non viene rispettato: a chi rivolgersi, come calcolare le scadenze, il glossario e le fonti.</span></a></li>
       </ul>
 
-      <div class="attenzione">
-        <p><strong>Importante.</strong> Questa guida ha scopo informativo e non sostituisce la consulenza di un sindacato, di un patronato o di un avvocato giuslavorista. Riguarda principalmente il lavoro dipendente nel settore privato: per il pubblico impiego e per alcune categorie (lavoro domestico, dirigenti, lavoro marittimo) valgono regole in parte diverse. Le norme cambiano: ogni pagina indica le fonti, così puoi verificarne la versione vigente.</p>
+      <h2>I numeri da conoscere</h2>
+      <p>I limiti principali fissati dalla legge per il lavoro dipendente nel settore privato. I contratti collettivi possono migliorarli.</p>
+      <div class="tabella">
+        <table>
+          <thead><tr><th scope="col">Valore</th><th scope="col">Cosa significa</th><th scope="col">Approfondisci</th></tr></thead>
+          <tbody>
+            <tr><td class="numero">40 ore</td><td>Orario normale settimanale</td><td><a href="orario.html">L'orario di lavoro</a></td></tr>
+            <tr><td class="numero">48 ore</td><td>Media massima settimanale, straordinari compresi</td><td><a href="orario.html">L'orario di lavoro</a></td></tr>
+            <tr><td class="numero">11 ore</td><td>Riposo consecutivo minimo ogni 24 ore</td><td><a href="riposi-e-pause.html">Riposi e pause</a></td></tr>
+            <tr><td class="numero">4 settimane</td><td>Ferie annuali retribuite minime</td><td><a href="ferie.html">Le ferie</a></td></tr>
+            <tr><td class="numero">24 mesi</td><td>Durata massima dei contratti a termine con lo stesso datore</td><td><a href="tempo-determinato.html">Tempo determinato</a></td></tr>
+            <tr><td class="numero">14 anni</td><td>Età del figlio fino alla quale si può usare il congedo parentale</td><td><a href="congedo-parentale.html">Congedo parentale</a></td></tr>
+            <tr><td class="numero">60 giorni</td><td>Termine per contestare un licenziamento</td><td><a href="licenziamento.html">Il licenziamento</a></td></tr>
+            <tr><td class="numero">7 giorni</td><td>Tempo per revocare le dimissioni online</td><td><a href="dimissioni.html">Le dimissioni</a></td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <nav class="naviga-pagine" aria-label="Pagine vicine">
-        <a class="successiva" href="costituzione.html"><span>Successiva</span>La Costituzione</a>
-      </nav>
+      <h2>Strumenti</h2>
+      <ul class="schede">
+        <li><a href="calcola-scadenze.html"><strong>Calcola le scadenze</strong><span>Licenziamento, dimissioni, contestazioni, NASpI: scopri entro quando agire.</span></a></li>
+        <li><a href="orario.html"><strong>Controlla la tua settimana</strong><span>Inserisci le ore lavorate e verifica i limiti di legge.</span></a></li>
+        <li><a href="busta-paga.html"><strong>Controlla la busta paga</strong><span>Una checklist da spuntare voce per voce.</span></a></li>
+        <li><a href="glossario.html"><strong>Glossario</strong><span>Le parole del lavoro spiegate in modo semplice.</span></a></li>
+      </ul>
 
-    </main>
+      <div class="nota">
+        <p><strong>Come leggere questa guida.</strong> Ogni pagina distingue tra ciò che è <strong>obbligatorio per legge</strong> e ciò che è <strong>buona pratica</strong>, e indica le fonti ufficiali. Il tuo contratto collettivo (CCNL) può prevedere condizioni migliori: verifica sempre anche quello.</p>
+      </div>
+      <div class="attenzione">
+        <p><strong>Importante.</strong> Questa guida ha scopo informativo e non sostituisce la consulenza di un sindacato, di un patronato o di un avvocato. Riguarda principalmente il lavoro dipendente nel settore privato: per il pubblico impiego e per alcune categorie valgono regole in parte diverse.</p>
+      </div>
+      </div>
 
-  </div>
+  </main>
 
   <footer class="piede">
-    <div class="piede-interno">
-      <p><strong>Diritti al Lavoro</strong> &middot; Guida informativa sui diritti di chi lavora in Italia.</p>
-      <p>I contenuti hanno scopo informativo e non sostituiscono la consulenza di un sindacato, di un patronato o di un avvocato. Riguardano principalmente il lavoro dipendente nel settore privato. Ultima revisione: novembre 2026. <a href="fonti.html">Vedi le fonti</a>.</p>
-      <p>Questo sito non usa cookie, non traccia i visitatori e non carica risorse da servizi esterni.</p>
+    <div class="piede-griglia">
+      <div>
+        <h2>Fonti ufficiali e aperte</h2>
+        <ul>
+          <li><a href="https://www.normattiva.it">Normattiva</a>, le leggi italiane vigenti</li>
+          <li><a href="https://www.gazzettaufficiale.it">Gazzetta Ufficiale</a> della Repubblica</li>
+          <li><a href="https://www.senato.it/istituzione/la-costituzione">La Costituzione</a> sul sito del Senato</li>
+          <li><a href="https://www.cortecostituzionale.it">Corte costituzionale</a></li>
+          <li><a href="https://eur-lex.europa.eu">EUR-Lex</a>, il diritto dell'Unione europea</li>
+          <li><a href="https://www.ilo.org/international-labour-standards">Norme internazionali del lavoro</a> (OIL)</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Istituzioni</h2>
+        <ul>
+          <li><a href="https://www.lavoro.gov.it">Ministero del Lavoro</a></li>
+          <li><a href="https://www.ispettorato.gov.it">Ispettorato Nazionale del Lavoro</a></li>
+          <li><a href="https://www.inps.it">INPS</a> e <a href="https://www.inail.it">INAIL</a></li>
+          <li><a href="https://www.cnel.it">CNEL</a>, archivio dei contratti collettivi</li>
+          <li><a href="https://www.garanteprivacy.it">Garante privacy</a> e <a href="https://www.anticorruzione.it">ANAC</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>La guida</h2>
+        <ul>
+          <li><a href="fonti.html">Tutte le fonti utilizzate</a></li>
+          <li><a href="glossario.html">Glossario</a></li>
+          <li><a href="a-chi-rivolgersi.html">A chi rivolgersi</a></li>
+          <li><a href="calcola-scadenze.html">Calcola le scadenze</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="piede-fondo">
+      <p><strong>Diritti al Lavoro</strong> è una guida informativa indipendente: non sostituisce la consulenza di un sindacato, di un patronato o di un avvocato. Riguarda principalmente il lavoro dipendente nel settore privato. Ultima revisione dei contenuti: novembre 2026.</p>
+      <p>Il sito non usa cookie, non traccia i visitatori e non carica risorse da servizi esterni. Carattere: Titillium Web, Accademia di Belle Arti di Urbino, licenza SIL Open Font License.</p>
     </div>
   </footer>
 
+  <script src="js/indice.js"></script>
   <script src="js/main.js"></script>
 
 </body>
