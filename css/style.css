@@ -1,0 +1,570 @@
+/* ==========================================================
+   Diritti al Lavoro - foglio di stile
+   Tono istituzionale: carta chiara, inchiostro scuro,
+   accento bordeaux. Nessun font esterno.
+   ========================================================== */
+
+:root{
+  --carta: #f7f5f0;
+  --carta-2: #efece4;
+  --bianco: #ffffff;
+  --inchiostro: #1d2228;
+  --testo: #2f353d;
+  --tenue: #5b636e;
+  --linea: #d9d4c8;
+  --blu: #1f3352;
+  --blu-2: #2c4a74;
+  --accento: #8a2432;
+  --ok: #24563b;
+  --ok-sfondo: #eaf2ec;
+  --no: #8a2432;
+  --no-sfondo: #f6e9ea;
+  --nota-sfondo: #f3efe3;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --larghezza: 1180px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  background: var(--carta);
+  color: var(--testo);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a{
+  color: var(--blu-2);
+  text-underline-offset: 2px;
+}
+
+a:hover{
+  color: var(--accento);
+}
+
+:focus-visible{
+  outline: 3px solid var(--accento);
+  outline-offset: 2px;
+}
+
+.salta{
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--blu);
+  color: var(--bianco);
+  padding: 10px 16px;
+  z-index: 100;
+}
+
+.salta:focus{
+  left: 16px;
+  top: 16px;
+}
+
+/* ---------- Intestazione ---------- */
+
+.testata{
+  background: var(--blu);
+  color: var(--bianco);
+  border-bottom: 4px solid var(--accento);
+}
+
+.testata-interna{
+  max-width: var(--larghezza);
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.marchio{
+  color: var(--bianco);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.marchio:hover{
+  color: var(--bianco);
+}
+
+.marchio-nome{
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.marchio-sotto{
+  font-size: 13px;
+  opacity: 0.85;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.bottone-indice{
+  display: none;
+  background: transparent;
+  color: var(--bianco);
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 4px;
+  padding: 8px 14px;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* ---------- Struttura ---------- */
+
+.pagina{
+  max-width: var(--larghezza);
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.indice{
+  position: sticky;
+  top: 24px;
+  font-size: 15px;
+}
+
+.indice-titolo{
+  font-family: var(--serif);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--tenue);
+  margin: 0 0 10px;
+}
+
+.indice ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 2px solid var(--linea);
+}
+
+.indice li a{
+  display: block;
+  padding: 6px 12px;
+  margin-left: -2px;
+  border-left: 2px solid transparent;
+  color: var(--testo);
+  text-decoration: none;
+}
+
+.indice li a:hover{
+  color: var(--accento);
+  border-left-color: var(--accento);
+}
+
+.indice li a[aria-current="page"]{
+  color: var(--blu);
+  font-weight: 700;
+  border-left-color: var(--blu);
+  background: var(--carta-2);
+}
+
+.contenuto{
+  min-width: 0;
+  max-width: 780px;
+}
+
+/* ---------- Tipografia ---------- */
+
+h1, h2, h3{
+  font-family: var(--serif);
+  color: var(--inchiostro);
+  line-height: 1.25;
+}
+
+h1{
+  font-size: clamp(30px, 4vw, 42px);
+  margin: 0 0 12px;
+}
+
+h2{
+  font-size: 26px;
+  margin: 44px 0 12px;
+  padding-top: 14px;
+  border-top: 1px solid var(--linea);
+}
+
+h3{
+  font-size: 20px;
+  margin: 28px 0 8px;
+}
+
+.occhiello{
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--accento);
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.sommario{
+  font-size: 19px;
+  color: var(--tenue);
+  margin: 0 0 24px;
+}
+
+p, ul, ol{
+  margin: 0 0 16px;
+}
+
+li{
+  margin-bottom: 6px;
+}
+
+strong{
+  color: var(--inchiostro);
+}
+
+/* ---------- Riquadri ---------- */
+
+.riquadro{
+  background: var(--bianco);
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin: 20px 0;
+}
+
+.riquadro > :last-child{
+  margin-bottom: 0;
+}
+
+.nota{
+  background: var(--nota-sfondo);
+  border-left: 4px solid var(--blu);
+  padding: 14px 18px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.nota > :last-child{
+  margin-bottom: 0;
+}
+
+.attenzione{
+  background: var(--no-sfondo);
+  border-left: 4px solid var(--accento);
+  padding: 14px 18px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.attenzione > :last-child{
+  margin-bottom: 0;
+}
+
+.fonte{
+  font-size: 14px;
+  color: var(--tenue);
+  margin-top: -6px;
+}
+
+.fonte a{
+  color: var(--tenue);
+}
+
+/* Due colonne: cosa puo' / non puo' fare */
+
+.confronto{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.colonna-si, .colonna-no{
+  border-radius: 6px;
+  padding: 16px 20px;
+  border: 1px solid var(--linea);
+}
+
+.colonna-si{
+  background: var(--ok-sfondo);
+  border-top: 4px solid var(--ok);
+}
+
+.colonna-no{
+  background: var(--no-sfondo);
+  border-top: 4px solid var(--no);
+}
+
+.colonna-si h3, .colonna-no h3{
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.colonna-si ul, .colonna-no ul{
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* Tabelle */
+
+.tabella{
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bianco);
+  font-size: 16px;
+}
+
+th, td{
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--linea);
+}
+
+th{
+  background: var(--carta-2);
+  font-family: var(--serif);
+  color: var(--inchiostro);
+}
+
+td.numero{
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blu);
+  white-space: nowrap;
+}
+
+/* Schede della home */
+
+.schede{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 20px 0 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.schede li{
+  margin: 0;
+}
+
+.schede a{
+  display: block;
+  height: 100%;
+  background: var(--bianco);
+  border: 1px solid var(--linea);
+  border-top: 3px solid var(--blu);
+  border-radius: 6px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--testo);
+}
+
+.schede a:hover{
+  border-top-color: var(--accento);
+  color: var(--testo);
+}
+
+.schede strong{
+  display: block;
+  font-family: var(--serif);
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.schede span{
+  font-size: 15px;
+  color: var(--tenue);
+}
+
+/* Citazione di legge */
+
+blockquote{
+  margin: 20px 0;
+  padding: 14px 20px;
+  background: var(--bianco);
+  border-left: 4px solid var(--accento);
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--inchiostro);
+}
+
+blockquote p:last-child{
+  margin-bottom: 0;
+}
+
+blockquote footer{
+  margin-top: 8px;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--tenue);
+}
+
+/* Elenco puntato a passi */
+
+.passi{
+  counter-reset: passo;
+  list-style: none;
+  padding: 0;
+}
+
+.passi li{
+  counter-increment: passo;
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 14px;
+}
+
+.passi li::before{
+  content: counter(passo);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--blu);
+  color: var(--bianco);
+  font-family: var(--serif);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigazione tra pagine */
+
+.naviga-pagine{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--linea);
+  font-size: 15px;
+}
+
+.naviga-pagine a{
+  text-decoration: none;
+}
+
+.naviga-pagine span{
+  display: block;
+  font-size: 13px;
+  color: var(--tenue);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.naviga-pagine .successiva{
+  text-align: right;
+  margin-left: auto;
+}
+
+/* ---------- Piede ---------- */
+
+.piede{
+  background: var(--inchiostro);
+  color: #d6d9de;
+  font-size: 14px;
+}
+
+.piede-interno{
+  max-width: var(--larghezza);
+  margin: 0 auto;
+  padding: 28px 24px;
+}
+
+.piede a{
+  color: #ffffff;
+}
+
+.piede p{
+  margin: 0 0 10px;
+}
+
+/* ---------- Schermi piccoli ---------- */
+
+@media (max-width: 900px){
+  body{
+    font-size: 16px;
+  }
+
+  .bottone-indice{
+    display: inline-block;
+  }
+
+  .pagina{
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding: 20px 16px 40px;
+  }
+
+  .indice{
+    position: static;
+    display: none;
+    background: var(--bianco);
+    border: 1px solid var(--linea);
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+
+  .indice.aperto{
+    display: block;
+  }
+
+  .testata-interna{
+    padding: 14px 16px;
+  }
+
+  .marchio-nome{
+    font-size: 21px;
+  }
+
+  .confronto{
+    grid-template-columns: 1fr;
+  }
+
+  h2{
+    font-size: 23px;
+  }
+}
+
+@media print{
+  .testata, .indice, .naviga-pagine, .bottone-indice{
+    display: none;
+  }
+
+  .pagina{
+    display: block;
+  }
+
+  body{
+    background: #ffffff;
+  }
+}
