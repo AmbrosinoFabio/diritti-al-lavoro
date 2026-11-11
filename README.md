@@ -4,7 +4,7 @@ Informative website explaining workers' rights in Italy, from employment contrac
 
 The content is in Italian, because it is written for people working in Italy. Every legal statement links to its official source (Normattiva, Senate, Ministry of Labour, National Labour Inspectorate, INPS, INAIL, CNEL, Constitutional Court).
 
-> Status: work in progress, not published yet.
+**Live site:** https://ambrosinofabio.github.io/diritti-al-lavoro/
 
 ## Structure
 
@@ -76,6 +76,7 @@ Titillium Web was designed by the Accademia di Belle Arti di Urbino and is relea
 ## Disclaimer and privacy
 
 - Independent, non-commercial informative site. It is not an official website and is not affiliated with any public body or trade union. No institutional logos or emblems are used.
+- The text was drafted with the help of AI tools, then checked against the official sources linked on each page and reviewed by the author, Fabio Ambrosino, who holds editorial responsibility (see Article 50(4) of the EU AI Act).
 - The content is general information, not legal advice. It may contain errors or be out of date; each page shows the date of the last review. Errors can be reported through [GitHub Issues](https://github.com/AmbrosinoFabio/diritti-al-lavoro/issues).
 - No cookies, trackers or third-party requests. The payslip checklist is saved in the visitor's browser only (localStorage). The site is hosted on GitHub Pages, which logs visitors' IP addresses for security purposes.
 
