@@ -944,6 +944,10 @@ td.numero{
   margin: 0 0 6px;
 }
 
+.piede-fondo strong{
+  color: inherit;
+}
+
 /* ---------- Schermi piccoli ---------- */
 
 @media (max-width: 900px){

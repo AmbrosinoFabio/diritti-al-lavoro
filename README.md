@@ -65,3 +65,17 @@ The content is for information only and does not replace advice from a trade uni
 ## Credits
 
 Titillium Web was designed by the Accademia di Belle Arti di Urbino and is released under the SIL Open Font License 1.1.
+
+## License
+
+- **Code** (HTML, CSS, JS): [MIT](LICENSE).
+- **Original text**: [CC BY 4.0](LICENSE-CONTENT.md), credited as "Diritti al Lavoro — Fabio Ambrosino".
+- **Quoted legal texts** (Constitution, codes, laws, decrees): official acts, not covered by copyright under art. 5 of Italian Law 633/1941, and therefore not covered by the licenses above.
+- **Font**: Titillium Web, SIL Open Font License 1.1 ([fonts/OFL.txt](fonts/OFL.txt)).
+
+## Disclaimer and privacy
+
+- Independent, non-commercial informative site. It is not an official website and is not affiliated with any public body or trade union. No institutional logos or emblems are used.
+- The content is general information, not legal advice. It may contain errors or be out of date; each page shows the date of the last review. Errors can be reported through [GitHub Issues](https://github.com/AmbrosinoFabio/diritti-al-lavoro/issues).
+- No cookies, trackers or third-party requests. The payslip checklist is saved in the visitor's browser only (localStorage). The site is hosted on GitHub Pages, which logs visitors' IP addresses for security purposes.
+
