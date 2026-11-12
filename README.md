@@ -8,19 +8,21 @@ The content is in Italian, because it is written for people working in Italy. Ev
 
 ## Structure
 
-The guide has 52 pages organised in 9 sections. Each section has an index page that links to its sub-pages.
+The guide follows the usual structure of Italian labour law: trade union law, the employment relationship, its termination and social security, plus a help section. Each section and group has an index page that links to its sub-pages.
 
-| Section | Pages |
-|---|---|
-| Le basi | Constitution, collective agreements (CCNL), Workers' Statute |
-| Contratti | Hiring, probation, fixed-term, part-time, apprenticeship, agency work |
-| Paga | Pay, payslip (with checklist), severance pay (TFR) |
-| Orario e ferie | Working hours (with weekly check), overtime, rest and night work, holidays |
-| Salute e famiglia | Sick leave, law 104, maternity, paternity, parental leave, remote work, free time |
-| Dignità e tutele | Interviews, monitoring, disciplinary procedure, duties and transfers, safety, stress, discrimination, harassment, whistleblowing, workplace culture |
-| Fine del rapporto | Resignation, dismissal, final entitlements |
-| Sindacato | Union rights, strikes |
-| Aiuto | Where to get help, deadline calculator, glossary, sources |
+| Section | Group | Pages |
+|---|---|---|
+| Diritto sindacale | | Constitution, Workers' Statute, collective agreements (CCNL), union rights, strikes |
+| Rapporto di lavoro | Diritti e obblighi delle parti | Interviews, monitoring, disciplinary procedure, safety, stress, discrimination, harassment, whistleblowing, workplace culture |
+| | Il contratto e le mansioni | Hiring, probation, fixed-term, part-time, apprenticeship, agency work, duties and transfers |
+| | Il trattamento economico | Pay, payslip (with checklist), severance pay (TFR) |
+| | Tempo e luogo di lavoro | Working hours (with weekly check), overtime, rest and night work, holidays, remote work, free time |
+| | Malattia, famiglia e congedi | Sick leave, law 104, maternity, paternity, parental leave |
+| Estinzione del rapporto | | Resignation, dismissal, final entitlements |
+| Previdenza | | In preparation: links to existing pages with social security content |
+| Aiuto | | Where to get help, deadline calculator, glossary, sources |
+
+The menu, breadcrumbs, "In questa sezione" box and previous/next links are repeated in every page and must match this structure, as must `js/indice.js`. `basi.html` is kept as a redirect to `sindacato.html` for old links.
 
 ## Interactive features
 

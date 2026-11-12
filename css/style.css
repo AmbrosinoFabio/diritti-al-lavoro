@@ -286,6 +286,53 @@ a:hover{
   color: var(--blu);
 }
 
+/* Sottomenu a più colonne, per le sezioni divise in gruppi */
+
+.menu-interno{
+  position: relative;
+}
+
+.menu-voce-larga{
+  position: static;
+}
+
+.sottomenu-largo{
+  left: 12px;
+  right: 12px;
+  padding: 16px 8px;
+}
+
+.menu-voce-larga:hover > .sottomenu-largo,
+.menu-voce-larga:focus-within > .sottomenu-largo{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px 8px;
+}
+
+.sottomenu-largo ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sottomenu-largo li{
+  margin: 0;
+}
+
+.sottomenu-largo a{
+  padding: 3px 12px;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.sottomenu-largo .sottomenu-titolo{
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--blu);
+  border-bottom: 1px solid var(--linea);
+  margin-bottom: 4px;
+}
+
 /* ---------- Corpo pagina ---------- */
 
 .corpo{
