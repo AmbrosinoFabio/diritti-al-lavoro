@@ -18,11 +18,11 @@ The guide follows the usual structure of Italian labour law: trade union law, th
 | | Il trattamento economico | Pay, payslip (with checklist), severance pay (TFR) |
 | | Tempo e luogo di lavoro | Working hours (with weekly check), overtime, rest and night work, holidays, remote work, free time |
 | | Malattia, famiglia e congedi | Sick leave, law 104, maternity, paternity, parental leave |
-| Estinzione del rapporto | | Resignation, dismissal, final entitlements |
-| Previdenza | | In preparation: links to existing pages with social security content |
+| Estinzione del rapporto | | Resignation, individual dismissal, unfair dismissal and remedies (art. 18 and *tutele crescenti*), how to challenge a dismissal, collective dismissal, final entitlements |
+| Previdenza | | Contributions, NASpI unemployment benefit, pensions, supplementary pension funds, work accidents and occupational diseases (INAIL) |
 | Aiuto | | Where to get help, deadline calculator, glossary, sources |
 
-The menu, breadcrumbs, "In questa sezione" box and previous/next links are repeated in every page and must match this structure, as must `js/indice.js`. `basi.html` is kept as a redirect to `sindacato.html` for old links.
+The menu, breadcrumbs, "In questa sezione" box and previous/next links are repeated in every page. They are generated, together with the section index pages and the search index `js/indice.js`, by `tools/naviga.py` from the `STRUTTURA` list at the top of the script. To add a page: create it (with its `<h1>`, meta description, `in-sezione` box and `naviga-pagine` block), add it to `STRUTTURA`, add its search keywords to `js/indice.js`, then run `python tools/naviga.py` from the site folder. `basi.html` is kept as a redirect to `sindacato.html` for old links.
 
 ## Interactive features
 
@@ -40,6 +40,7 @@ css/style.css       # Stylesheet
 js/main.js          # Menu, search and interactive tools
 js/indice.js        # Search index of all pages
 fonts/              # Titillium Web (SIL Open Font License, see fonts/OFL.txt)
+tools/naviga.py     # Regenerates navigation and search index (not used by the site)
 ```
 
 ## Design choices
